@@ -1,3 +1,32 @@
+/*-------------------------------------Sections-------------------------------------*/
+
+.left {
+    position:absolute;
+    left:0; top:0px; bottom: 0;
+    width: 30%;
+}
+.main {
+    position: absolute;
+    left:30%; top:0px; right:0; bottom:0;
+}
+
+.left { background: #ffffff; }
+.main { background: #91caf5; }
+
+/*-------------------------------------Skyline Images-------------------------------------*/
+
+.imgmain {
+    position: absolute;
+    left: 0%; bottom: 0px;
+}
+
+.imgleft {
+    position: absolute;
+    left: 0%; bottom: 0px;
+}
+
+/*-------------------------------------Main Banner-------------------------------------*/
+
 .hidden {
     display:none;
 }
@@ -18,28 +47,10 @@ p {
     color: #ffffff;
 }
 
+/*-------------------------------------Links-------------------------------------*/
+
 a {
-	color: inherit;
-}
-
-.left {
-    position:absolute;
-    left:0; top:0px; bottom: 0;
-    width: 30%;
-}
-.main {
-   	position: absolute;
-    left:30%; top:0px; right:0; bottom:0;
-}
-
-.imgmain {
-	position: absolute;
-	left: 0%; bottom: 0px;
-}
-
-.imgleft {
-	position: absolute;
-	left: 0%; bottom: 0px;
+    color: inherit;
 }
 
 .icon {
@@ -48,56 +59,52 @@ a {
 }
 
 .email {
-	position: absolute;
-	top: 400px;
-	left: 125px;
-	width: 300px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
-	color: #ffffff;
-	text-shadow: 2px 2px #696969;
+    top: 420px;
 }
+    .email:hover {
+        -webkit-filter: drop-shadow(2px 2px 2px #696969);
+        filter: drop-shadow(2px 2px 2px #696969);
+    }
 
 .github {
-	position: absolute;
-	top: 460px;
-	left: 125px;
-	width: 300px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
-	color: #ffffff;
-	text-shadow: 2px 2px #696969;
+    top: 480px;
 }
+    .github:hover {
+        -webkit-filter: drop-shadow(2px 2px 2px #696969);
+        filter: drop-shadow(2px 2px 2px #696969);
+    }
 
 .portfolio {
-	position: absolute;
-	top: 520px;
-	left: 125px;
-	width: 300px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
-	color: #ffffff;
-	text-shadow: 2px 2px #696969;
+    top: 540px;
 }
+    .portfolio:hover {
+        -webkit-filter: drop-shadow(2px 2px 2px #696969);
+        filter: drop-shadow(2px 2px 2px #696969);
+    }
 
 .about {
-	position: absolute;
-	top: 580px;
-	left: 125px;
-	width: 300px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
-	color: #ffffff;
-	text-shadow: 2px 2px #696969;
+    top: 600px;
 }
+    .about:hover {
+        -webkit-filter: drop-shadow(2px 2px 2px #696969);
+        filter: drop-shadow(2px 2px 2px #696969);
+    }
 
 .email, .github, .portfolio, .about {
-    margin-top: 25px;
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
+    position: absolute;
+    left: 125px;
+    width: 300px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px #696969;
 }
+
+/*-------------------------------------Initial Fade In-------------------------------------*/
 
 @keyframes fadein {
     from {
@@ -131,7 +138,3 @@ a {
         opacity: 1;
     }
 }
-
-.left { background: #ffffff; }
-.main { background: #91caf5; }
-
